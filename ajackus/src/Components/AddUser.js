@@ -16,7 +16,7 @@ const AddUser = ({ addUserModal, setAddUserModal, fetchData }) => {
 
   const handleSaveChanges = () => {
     axios
-      .post(`https://jsonplaceholder.typicode.com/users`, newUser) // Use the correct endpoint
+      .post(`https://ajackus-backend.onrender.com/users/add`, newUser) // Use the correct endpoint
       .then((res) => {
         alert("User Added Successfully");
         setNewUser({
